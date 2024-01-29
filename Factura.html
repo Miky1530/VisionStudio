@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="style_fa.css">
+</head>
+<body>
+
+    <!-- Agrega el iframe con el id "facturaFrame" -->
+    <iframe id="facturaFrame" src="factura.html" style="display:none;"></iframe>
+
+    <div class="factura">
+        <div class="encabezado">
+            <img src="ImagesCont/logo v.png" alt="Logo">
+            <h1>Visión Studio</h1>
+        </div>
+
+        <div class="encabezado">
+            <p>Número de Factura: 123456</p>
+            <p>Fecha: 11 de enero de 2024</p>
+        </div>
+
+        <div class="detalles-factura">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>ITBS</th>
+                        <th>Sub-Total</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <!-- Agregando el identificador al tbody -->
+                <tbody id="factura-table">
+                    <!-- Aquí se agregarán dinámicamente los elementos del carrito -->
+                    <tr>
+                        <td>Pomo de tenis</td>
+                        <td>1</td>
+                        <td>1000</td>
+                        <td>80</td>
+                        <td>1000</td>
+                        <td>1180</td>
+                    </tr>
+                    <tr>
+                        <td>Promo de Poloche</td>
+                        <td>1</td>
+                        <td>900</td>
+                        <td>72</td>
+                        <td>900</td>
+                        <td>972</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="total">
+            <p>Total: 2,152<span id="total"></span></p>
+        </div>
+
+        <div class="cerrar-btn">
+            <button onclick="window.location.href='Index.html'">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
